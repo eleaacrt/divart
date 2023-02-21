@@ -1,0 +1,29 @@
+/* ------------------------------------------------ */
+
+
+/* Fonts */
+
+
+/* ------------------------------------------------ */
+
+// playfair display
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../src/fonts/Playfair-Display/PlayfairDisplay.woff2) format('woff2'), url(../fonts/Playfair-Display/PlayfairDisplay.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Playfair Display Italic';
+    src: url(../fonts/Playfair-Display/PlayfairDisplay-Italic.woff2) format('woff2'), url(../fonts/Playfair-Display/PlayfairDisplay-Italic.woff) format('woff');
+}
+
+// montserrat
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat.woff2) format('woff2'), url(../fonts/Montserrat/Montserrat.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url(../fonts/Montserrat/Montserrat-Italic.woff2) format('woff2'), url(../fonts/Montserrat/Montserrat-Italic.woff) format('woff');
+}

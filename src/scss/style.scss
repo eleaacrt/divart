@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'fonts';
+
+/* ------------------------------------------------ */
+
+
+/* global */
+
+
+/* ------------------------------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------ */
+
+
+/* header */
+
+
+/* ------------------------------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 0 10rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-family: $font-primary;
+            font-weight: 900;
+            font-size: 1rem;
+        }
+    }
+}
