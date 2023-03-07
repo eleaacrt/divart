@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Explore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: rgba(255,255,255,0);
+        overflow: hidden;
+    }
+    nav{
+        width: 100vw;
+        background-color: #000;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        width: 20vw;
+        height: auto;
+        margin: 10px;
+    }
+    .list{
+        margin: 0;
+        color:white;
+        width: 60vw;
+    }
+    .list ul{
+        display:flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .navLink{
+        color:white;
+        text-decoration: none;
+    }
+    .navLink:hover{
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="."><img src="../public/divArt.svg" alt="go back home"></a>
+        <div class="list">
+            <ul>
+                <a href="" class="navLink"><li>L'agence</li></a>
+                <a href="" class="navLink"><li>L'expo</li></a>
+                <a href="" class="navLink"><li>Billeterie</li></a>
+               
+            </ul>
+        </div>
+    </nav>
+    <div class="mainSite">
+
+    </div>
+    <div class="dispositif">
+        <script src="./dispositif.js" type="module"></script>
+    </div>
+    
+</body>
+
+</html>
