@@ -5,63 +5,57 @@
     <title>Explore</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dispositif.css">
 </head>
-<style>
-    body {
-        margin: 0;
-        background-color: rgba(255,255,255,0);
-        overflow: hidden;
-    }
-    nav{
-        width: 100vw;
-        background-color: #000;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav img{
-        width: 20vw;
-        height: auto;
-        margin: 10px;
-    }
-    .list{
-        margin: 0;
-        color:white;
-        width: 60vw;
-    }
-    .list ul{
-        display:flex;
-        list-style: none;
-        justify-content: space-around;
-    }
-    .navLink{
-        color:white;
-        text-decoration: none;
-    }
-    .navLink:hover{
-        text-decoration: underline;
-    }
-</style>
 
 <body>
     <nav>
-        <a href="."><img src="../public/divArt.svg" alt="go back home"></a>
+        <a href="."><img src="divArt.svg" alt="go back home"></a>
         <div class="list">
             <ul>
-                <a href="" class="navLink"><li>L'agence</li></a>
-                <a href="" class="navLink"><li>L'expo</li></a>
-                <a href="" class="navLink"><li>Billeterie</li></a>
-               
+                <a href="" class="navLink">
+                    <li>L'agence</li>
+                </a>
+                <a href="" class="navLink">
+                    <li>L'expo</li>
+                </a>
+                <a href="" class="navLink">
+                    <li>Billeterie</li>
+                </a>
+
             </ul>
         </div>
     </nav>
     <div class="mainSite">
+        <p>
+            <a href="."><span class="arianePass">Accueil /</span></a>
+            <a href="."><span class="arianePass">Impressione moi /</span></a>
+            <a href="."><span class="ariane">Dispositif Interactif</span></a>
+        </p>
+        <div class="titleQR">
+            <div class="title">
+                <h1>Un super dispositif interactif</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+            </div>
+            <div class="qr">
+                <img src="qrCode.png" alt="vers le Dispositif">
+            </div>
+        </div>
 
     </div>
-    <div class="dispositif">
-        <script src="./dispositif.js" type="module"></script>
-    </div>
-    
+
+    <script src="dispositif.js" type="module"></script>
+
+
 </body>
 
 </html>

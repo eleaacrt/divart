@@ -2,7 +2,7 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js'
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js'
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js'
-import { ARButton } from '../node_modules/three/examples/jsm/webxr/ARButton.js';
+import { ARButton } from './node_modules/three/examples/jsm/webxr/ARButton.js';
 
 let scene, camera, renderer;
 let controller;
@@ -10,6 +10,7 @@ let controller;
 init();
 function init() {
     const container = document.createElement('div');
+    container.classList.add("dispositifInteractif");
     document.body.appendChild(container);
 
     // Création d'une scène ThreeJS
@@ -37,7 +38,8 @@ function init() {
     renderer.xr.enabled = true;
     container.appendChild(renderer.domElement);
 
-    document.body.appendChild(ARButton.createButton(renderer));
+    document.body.appendChild(ARButton.createButton(renderer)).classList.add("dispositifInteractif");
+
 
     // const geometry = new THREE.BoxGeometry(1, 1, 1);
     const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
