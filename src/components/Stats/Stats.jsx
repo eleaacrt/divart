@@ -39,7 +39,7 @@ export const Stats = ({ reservations }) => {
                                 }
                             })
                         }
-                        {totalVisiteurs / allDates.length}
+                        {Math.round(totalVisiteurs / allDates.length)}
                     </p>
                 </StatsCard>
                 <StatsCard
