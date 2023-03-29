@@ -6,7 +6,6 @@ export const Coordonnees = ({ coordonnees, onClick }) => {
 
     return (
         <>
-            <input type="text" id="myInput" onkeyup="filterBackoffice()" placeholder="Rechercher par titre"></input>
             <table className="myTable">
                 <thead>
                     <tr>
@@ -56,7 +55,6 @@ export const Coordonnees = ({ coordonnees, onClick }) => {
                     ))}
                 </tbody>
             </table>
-            <p id="erreurback">&#128546; Oops, aucun article ne semble correspondre à votre recherche.</p>
         </>
     );
 

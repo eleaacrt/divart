@@ -62,15 +62,6 @@ const App = () => {
             )
           )
         }
-        {/* <Connexion
-           className="connexion"
-           setUser={setUser}
-           user={user}
-        />
-         <Coordonnees
-           coordonnees={coordonnees}
-           onClick={handleDelete}
-        /> */}
       </main>
     </>
   );

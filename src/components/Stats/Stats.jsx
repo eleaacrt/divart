@@ -1,6 +1,6 @@
 import { StatsCard } from './StatsCard/StatsCard'
 
-export const Stats = ({ reservations, user }) => {
+export const Stats = ({ reservations }) => {
     let somme = 0;
     const date = new Date();
     let year = date.getFullYear();
@@ -37,7 +37,6 @@ export const Stats = ({ reservations, user }) => {
                                 } else {
                                     totalVisiteurs += parseInt(reservation.amount);
                                 }
-                                return totalVisiteurs;
                             })
                         }
                         {totalVisiteurs / allDates.length}
@@ -52,7 +51,6 @@ export const Stats = ({ reservations, user }) => {
                                 if (reservation.date === formattedDate) {
                                     somme += parseInt(reservation.amount);
                                 }
-                                return somme;
                             })
                         }
                         {somme}
