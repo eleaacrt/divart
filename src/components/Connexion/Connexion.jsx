@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import { useForm } from "react-hook-form";
 
 
@@ -24,7 +23,6 @@ export const Connexion = ({setUser, user, className}) => {
                     console.log(err);
                 });
         };
-
 
         return (
             <>
